@@ -43,6 +43,18 @@ public class BulletBehaviour : MonoBehaviour
             if (bulletData.isSticky)
             {
                 rb.velocity = Vector3.zero;
+
+                if(bulletData.isMagnetic && !bulletData.isChaotic)
+                {
+                    transform.GetChild(0).gameObject.SetActive(true);
+                    transform.GetChild(0).transform.localScale = new Vector3(bulletData.OrbitRange * 5f, bulletData.OrbitRange * 5f, bulletData.OrbitRange * 5f);
+                }
+
+                if(bulletData.isMagnetic && bulletData.isChaotic)
+                {
+                    transform.GetChild(0).gameObject.SetActive(true);
+                    transform.GetChild(0).transform.localScale = new Vector3(bulletData.effectRange / 0.5f, bulletData.effectRange / 0.5f, bulletData.effectRange / 0.5f);
+                }
             }
             Explode(); 
         }
@@ -121,16 +133,16 @@ public class BulletBehaviour : MonoBehaviour
                         if (distanceBetweenPoints > bulletData.OrbitRange) {
                             //si esta sobre el rango de efecto pero menos que el rango de orbita debe atraer el objeto
                             objects[i].GetComponent<Rigidbody>().AddForce(forceVector);
-                        } else
+                        } else if(!bulletData.isChaotic)
                         {
                             objects[i].GetComponent<Rigidbody>().velocity = Vector3.zero;
-                            objects[i].GetComponent<Rigidbody>().transform.RotateAround(transform.position + new Vector3(0, 20, 0), Vector3.up, bulletData.orbitSpeed * Time.deltaTime);
+                            objects[i].GetComponent<Rigidbody>().transform.RotateAround(transform.position, Vector3.up, bulletData.orbitSpeed * Time.deltaTime);
                         }
                     }
 
                     if (bulletData.isChaotic && bulletData.isMagnetic)
                     {
-                        Invoke("ChaoticBullet", 3f);
+                        Invoke("ChaoticBullet", 1.5f);
                     }
                 }
             }
@@ -152,6 +164,7 @@ public class BulletBehaviour : MonoBehaviour
     {
         Explode();
         bulletData.isMagnetic = false;
+        transform.GetChild(0).gameObject.SetActive(false);
         bulletData.isExplosive = true;
     }
     private void DestroyBullet()

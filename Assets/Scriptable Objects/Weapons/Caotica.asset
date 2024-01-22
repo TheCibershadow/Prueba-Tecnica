@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponName: Arma Caotica
   bullet: {fileID: 4524998398261747009, guid: 32f6b308c912d054f91e19f7e5817ab5, type: 3}
   shootForce: 1
-  upwardForce: 4
+  upwardForce: 2
   timeBetweenShots: 1
   spread: 0
   reloadTime: 1.5
@@ -23,6 +23,6 @@ MonoBehaviour:
   magazineSize: 5
   bulletsPerTap: 1
   allowButtonHold: 0
-  bulletsLeft: 4
+  bulletsLeft: 0
   bulletsShot: 1
   muzzleEffect: {fileID: 0}

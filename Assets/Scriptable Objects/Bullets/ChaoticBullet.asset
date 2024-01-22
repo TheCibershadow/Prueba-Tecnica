@@ -16,7 +16,7 @@ MonoBehaviour:
   whatIsAffected:
     serializedVersion: 2
     m_Bits: 256
-  bounciness: 1
+  bounciness: 0
   useGravity: 1
   isExplosive: 1
   isSticky: 1
@@ -24,9 +24,9 @@ MonoBehaviour:
   isChaotic: 1
   effectRange: 6
   explosionForce: 150
-  MagneticForce: 70
-  OrbitRange: 2
+  MagneticForce: 150
+  OrbitRange: 0.5
   orbitSpeed: 200
-  maxCollision: 1
+  maxCollision: 0
   maxLifetime: 5
   explodeOnTouch: 0

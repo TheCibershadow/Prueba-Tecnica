@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Arma Parabolica
   bullet: {fileID: 6581648742911453904, guid: 9557e0cc44ec5af4ca8abdfa68ad78ca, type: 3}
-  shootForce: 1
-  upwardForce: 3
+  shootForce: 0.7
+  upwardForce: 5
   timeBetweenShots: 0.5
   spread: 0
   reloadTime: 1.5
@@ -23,6 +23,6 @@ MonoBehaviour:
   magazineSize: 10
   bulletsPerTap: 1
   allowButtonHold: 0
-  bulletsLeft: 10
+  bulletsLeft: 4
   bulletsShot: 1
   muzzleEffect: {fileID: 0}
