@@ -68,15 +68,15 @@
     <Compile Include="Assets\Scripts\Bullets\BulletData.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\Scripts\Weapon\WeaponBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Scene\ResetObjects.cs" />
     <Compile Include="Assets\Third Party\Starfield Skybox\Demo\Script\LookCamera.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\Scripts\Bullets\BulletBehaviour.cs" />
     <Compile Include="Assets\Scripts\Weapon\InteractableObject.cs" />
+    <Compile Include="Assets\Scripts\Scene\DeadZone.cs" />
+    <Compile Include="Assets\Scripts\Affected Objects\RememberPosition.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\Player\InputManager.cs" />
-    <Compile Include="Assets\Scripts\Scene\ResetObjects.cs" />
-    <Compile Include="Assets\Scripts\Affected Objects\RememberPosition.cs" />
-    <Compile Include="Assets\Scripts\Scene\DeadZone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
