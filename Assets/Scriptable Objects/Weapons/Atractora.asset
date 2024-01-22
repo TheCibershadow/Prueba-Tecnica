@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03b967988d5612f4890969c06189c9ce, type: 3}
+  m_Name: Atractora
+  m_EditorClassIdentifier: 
+  weaponName: Arma Magnetica
+  bullet: {fileID: 5232858191192691664, guid: 552e6b05bbdd40d46822df86b3ff4253, type: 3}
+  shootForce: 1
+  upwardForce: 2
+  timeBetweenShots: 0.5
+  spread: 0
+  reloadTime: 1.5
+  timeBetweenShooting: 0.5
+  magazineSize: 10
+  bulletsPerTap: 1
+  allowButtonHold: 0
+  bulletsLeft: 8
+  bulletsShot: 1
+  muzzleEffect: {fileID: 0}
